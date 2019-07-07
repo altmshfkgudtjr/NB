@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lnag="en">
+<head>
+	<title>I am NB</title>
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="theme-color" content="#181818">
+	
+   	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<link rel="shortcut icon" href="../static/images/favicon.ico">
+   	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700" rel="stylesheet">	
+   	<!-- 아이콘 -->
+   	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+   	<link rel="stylesheet" href="../static/css/open-iconic-bootstrap.min.css">
+   	<link rel="stylesheet" href="../static/css/animate.css">
+   	<link rel="stylesheet" href="../static/css/owl.carousel.min.css">
+   	<link rel="stylesheet" href="../static/css/owl.theme.default.min.css">
+   	<link rel="stylesheet" href="../static/css/magnific-popup.css">
+   	<link rel="stylesheet" href="../static/css/aos.css">
+   	<link rel="stylesheet" href="../static/css/ionicons.min.css">
+   	<link rel="stylesheet" href="../static/css/bootstrap-datepicker.css">
+   	<link rel="stylesheet" href="../static/css/jquery.timepicker.css">
+   	<link rel="stylesheet" href="../static/css/flaticon.css">
+   	<link rel="stylesheet" href="../static/css/icomoon.css">
+   	<link rel="stylesheet" href="../static/css/style.css">
+	<style>
+		body {
+			background-color: black;
+		}
+		.input_NB {
+			position: relative;
+			left: 50%;
+			transform: translate(-50%, 0);
+			font-size: 30px;
+			font-weight: bold;
+			margin: 15px;
+			margin-left: 0;
+			width: 50%;
+			background-color: rgba(0,0,0,0);
+			border: 1px solid white;
+			height: 60px;
+			color: white;
+			text-align: center;
+			transition: 0.6s;
+		}
+		.input_NB:focus {
+			outline: none;
+			border: 1px solid #8D8C90;
+		}
+		.submit_NB {
+			cursor: pointer;
+			border: 1px solid skyblue;
+		}
+		.submit_NB:hover {
+			color: #0040FF;
+		}
+		.Copyright_NB {
+			position: absolute;
+			width: 100%;
+			text-align: center;
+			bottom: -200px;
+			left: 50%;
+			transform: translate(-50%, 0);
+			color: #aaaaaa;
+		}
+		.NB_bar {
+   			margin-top: 50px;
+   			margin-bottom: 150px;
+   			width: 100%;
+   			height: 100px;
+   			text-align: center;
+   		}
+   		.NB_logout {
+   			position: absolute;
+   			margin-right: 50px;
+   			right: 0px;
+   			top: 0px;
+   			width: 150px;
+   			height: 50px;
+   			font-size: 20px;
+   			color: white;
+   			padding-top: 5px;
+   			border: 1px solid skyblue;
+   			background-color: rgba(0,0,0,0);
+   		}
+		@media screen and (max-width: 1024px) {
+			.input_NB {
+				position: relative;
+				left: 50%;
+				transform: translate(-50%, 0);
+				font-size: 30px;
+				font-weight: bold;
+				margin: 15px;
+				margin-left: 0px;
+				width: 90%;
+				background-color: rgba(0,0,0,0);
+				border: 1px solid white;
+				height: 60px;
+				color: white;
+				text-align: center;
+				transition: 0.5s;
+			}
+			.NB_logout {
+   				position: absolute;
+   				right: 0px;
+   				top: -40px;
+   				width: 15%;
+   				height: 9%;
+   				margin: 2%;
+   				text-align: center;
+   				font-size: 20px;
+   				color: white;
+   				padding-top: 5px;
+   				border: 1px solid skyblue;
+   				background-color: rgba(0,0,0,0);
+   			}
+		}
+	</style>
+</head>
+<body>
+	<div class="NB_bar">
+		<a href="/index" class="NB_logout">BACK</a>
+		<h2 style="color: #888888">어서오세요!</h2><br><h1>로그인을 해주세요!</h1>
+	</div>
+	<form action="/login" method="POST">
+		<input type="text" name="ID" class="input_NB" placeholder="ID" autofocus required autocomplete="off">
+		<br>
+		<input type="password" name="PW" class="input_NB" placeholder="Password" required>
+		<br>
+		<input type="submit" class="input_NB submit_NB" value="LOGIN">
+	</form>
+	<p class="Copyright_NB">Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This Homepage is made with by NB</p>
+
+
+	<script src="../static/js/jquery.min.js"></script>
+   	<script src="../static/js/jquery-migrate-3.0.1.min.js"></script>
+   	<!--NB JS-->
+   	<script src="../static/js/NB.js"></script>
+   	<!--OTHERS-->
+   	<script src="../static/js/popper.min.js"></script>
+   	<script src="../static/js/bootstrap.min.js"></script>
+   	<script src="../static/js/jquery.easing.1.3.js"></script>
+   	<script src="../static/js/jquery.waypoints.min.js"></script>
+   	<script src="../static/js/jquery.stellar.min.js"></script>
+   	<script src="../static/js/owl.carousel.min.js"></script>
+   	<script src="../static/js/jquery.magnific-popup.min.js"></script>
+   	<script src="../static/js/aos.js"></script>
+   	<script src="../static/js/jquery.animateNumber.min.js"></script>
+   	<script src="../static/js/scrollax.min.js"></script>
+   	<script src="../static/js/bootstrap-datepicker.js"></script>
+   	<script src="../static/js/jquery.timepicker.min.js"></script>
+   	<script src="../static/js/main.js"></script>
+</body>
+</html>
