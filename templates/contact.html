@@ -98,7 +98,7 @@
           </div>
           <div class="row block-9">
             <div class="col-md-6 pr-md-5">
-              <form action="MAILTO:altmshfkgudtjr@naver.com" method="POST" enctype="text/plain">
+              <form>
                 <div class="form-group">
                   <input type="text" class="form-control" placeholder="Your Name">
                 </div>
@@ -106,13 +106,13 @@
                   <input type="text" class="form-control" placeholder="Your Email">
                 </div>
                 <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Subject">
+                  <input type="text" class="form-control" placeholder="Subject" id="send_message_title">
                 </div>
                 <div class="form-group">
-                  <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Write Here"></textarea>
+                  <textarea name="body" cols="30" rows="7" class="form-control" placeholder="Write Here" id="send_message_body"></textarea>
                 </div>
                 <div class="form-group">
-                  <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
+                  <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5" onclick="modakbul_git_mail();">
                 </div>
               </form>
             
@@ -178,6 +178,15 @@
     <script src="../static/js/bootstrap-datepicker.js"></script>
     <script src="../static/js/jquery.timepicker.min.js"></script>
     <script src="../static/js/main.js"></script>
-    
+    <script>
+      //send_message
+      //Send mail function
+      function modakbul_git_mail() {
+        let title = $('#send_message_title').val();
+        let body = $('#send_message_body').val();
+        window.open('mailto:altmshfkgudtjr@naver.com?subject='+title+'&body='+body);
+        //window.open('mailto:shin10256@gmail.com');
+      }
+    </script>
   </body>
 </html>
