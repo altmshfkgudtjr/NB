@@ -1,4 +1,5 @@
 # NB Project
+> This site is closed.
 This is my website for myself
 
 ## Domain
